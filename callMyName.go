@@ -1,5 +1,9 @@
 package go_call_my_name
 
-func CallMyName(name string) string {
-	return "Hello" + name + " , have a nice day"
+import (
+	"strconv"
+)
+
+func CallMyNameAndAge(name string, age int) string {
+	return "Hello " + name + "with " +  strconv.Itoa(age) + " years old, have a nice day"
 }
